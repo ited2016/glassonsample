@@ -109,7 +109,7 @@ nav{
     width: 400px;
     height: 120px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left:30%;
     transition: translateY(-50%);
     z-index: 1;
