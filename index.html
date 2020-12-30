@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glasson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">trans</a></li>
+                    <li><a href="#">sight</a></li>
+                    <li><a href="#">cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/motor.png" class="motor">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/house.png" alt="camera">
+                    <div>
+                        <h1>snow</h1>
+                        <p>clear crystal</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/cpu.png" alt="camera">
+                    <div>
+                        <h1>snow</h1>
+                        <p>clear crystal</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/eye.png" alt="camera">
+                    <div>
+                        <h1>snow</h1>
+                        <p>clear crystal</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png" alt="camera">
+                    <div>
+                        <h1>snow</h1>
+                        <p>clear crystal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" alt="arrow" id="upBtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" alt="arrow" id="downBtn">
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+        downBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+    </script>
+</body>
+</html>
